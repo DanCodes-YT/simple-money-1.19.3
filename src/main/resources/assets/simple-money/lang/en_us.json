@@ -1,3 +1,6 @@
 {
-  "item.simple-money.copper_coin": "Copper Coin"
+  "item.simple-money.copper_coin": "Copper Coin",
+  "item.simple-money.silver_coin": "Silver Coin",
+
+  "itemgroup.simple_money": "Simple Money!"
 }

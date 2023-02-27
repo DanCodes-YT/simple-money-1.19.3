@@ -1,5 +1,6 @@
 package net.dancodes.simplemoney;
 
+import net.dancodes.simplemoney.item.ModItemGroup;
 import net.dancodes.simplemoney.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,8 +13,8 @@ public class SimpleMoney implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		LOGGER.info("Simple Money starting!");
+		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }

@@ -13,13 +13,16 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item COPPER_COIN = registerItem("copper_coin",
             new Item(new FabricItemSettings()));
+    public static final Item SILVER_COIN = registerItem("silver_coin",
+            new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SimpleMoney.MOD_ID, name), item);
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.TOOLS, COPPER_COIN);
+        addToItemGroup(ModItemGroup.SIMPLE_MONEY, COPPER_COIN);
+        addToItemGroup(ModItemGroup.SIMPLE_MONEY, SILVER_COIN);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
